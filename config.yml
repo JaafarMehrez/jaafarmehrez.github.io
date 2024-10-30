@@ -1,4 +1,4 @@
-baseURL: "https://jaafarmehrez.github.io/jaafarmehrez.github.io" 
+baseURL: "https://jaafarmehrez.github.io/jaafarmehrez.github.io/" 
 title: Jaafar Mehrez
 theme: PaperMod
 
@@ -27,7 +27,7 @@ menu:
           weight: 6
 
 params:
-    description: "This is just a place for my random thoughts..The site is still under construction.."
+    description: "This is just a place for my random thoughts.."
     author: Jaafar Mehrez
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
@@ -53,7 +53,7 @@ params:
     profileMode:
           enabled: true
           title: Jaafar Mehrez
-          subtitle: "This is just a place for my random thoughts.."
+          subtitle: "This is just a place for my random thoughts..The site is still under construction.."
           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
