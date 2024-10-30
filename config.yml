@@ -27,7 +27,7 @@ menu:
           weight: 6
 
 params:
-    description: "This is just a place for my random thoughts.."
+    description: "This is just a place for my random thoughts..The site is still under construction.."
     author: Jaafar Mehrez
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
