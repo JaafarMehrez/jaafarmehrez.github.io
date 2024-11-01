@@ -23,7 +23,7 @@ menu:
           url: data/
           weight: 4 
         - name: Blog
-          url:          
+          url: https://medium.com/@jfrmhrzz         
           weight: 6
 
 params:
@@ -71,7 +71,7 @@ params:
             - name: Archive
               url: archive/
             - name: Blog
-              url: 
+              url: https://medium.com/@jfrmhrzz
 
     socialIcons:
         - name: CV
