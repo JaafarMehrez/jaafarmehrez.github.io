@@ -85,15 +85,15 @@ params:
         - name: Office Hours
           url: officehours/
         - name: Google Scholar
-          url: 
+          url: https://scholar.google.com/citations?hl=en&user=pfztAw8AAAAJ
         - name: GitHub
-          url: 
-        - name: Substack
-          url:
-        - name: YouTube
-          url: 
-        - name: Twitter
-          url:
+          url: https://github.com/JaafarMehrez
+        - name: Matter Modeling
+          url: https://mattermodeling.stackexchange.com/users/1554/jaafar-mehrez
+        - name: Buymeacoffee
+          url: buymeacoffee.com/jaafarmehrez
+        - name: X
+          url: https://x.com/jfrmhrzz
 
     assets:
         disableScrollBarStyle: true
