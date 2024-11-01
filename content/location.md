@@ -12,8 +12,8 @@ description: "Jaafar Mehrez`s  mailing and office addresses at the Shanghai Jiao
 
 Jaafar Mehrez
 
-Department of Micro/Nano Electronics
-Shanghai Jiao Tong University
+Department of Micro/Nano Electronics     
+Shanghai Jiao Tong University      
 Shanghai, China
 
 ---
@@ -21,7 +21,7 @@ Shanghai, China
 #### Office address
 
 Building 01, Room 411
-National Key Laboratory of Advanced Micro and Nano Manufacture Technology
+National Key Laboratory of Advanced Micro and Nano Manufacture Technology            
 Shanghai Jiao Tong University
 
 ---
