@@ -86,20 +86,21 @@ params:
           url: officehours/
         - name: Google Scholar
           url: https://scholar.google.com/citations?hl=en&user=pfztAw8AAAAJ
-        - name: Researchgate
-          url: https://www.researchgate.net/profile/Jaafar-Mehrez
         - name: GitHub
           url: https://github.com/JaafarMehrez
         - name: Stackexchange
           url: https://mattermodeling.stackexchange.com/users/1554/jaafar-mehrez
+        - name: Linkedin
+          url: https://www.linkedin.com/in/jaafar-mehrez
+        - name: Researchgate
+          url: https://www.researchgate.net/profile/Jaafar-Mehrez
+        - name: X
+          url: https://x.com/jfrmhrzz
         - name: Buymeacoffee
           url: https://buymeacoffee.com/jaafarmehrez
         - name: Kofi
           url: https://ko-fi.com/jaafarmehrez
-        - name: Linkedin
-          url: https://www.linkedin.com/in/jaafar-mehrez
-        - name: X
-          url: https://x.com/jfrmhrzz
+        
 
     assets:
         disableScrollBarStyle: true
