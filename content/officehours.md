@@ -1,6 +1,6 @@
 ---
 title: "Office Hours"
-date: 2024-11-01
+date: 2025-06-27
 hidemeta: true
 description: "Schedule and location for Jaafar Mehrez's office hours."
 ---
