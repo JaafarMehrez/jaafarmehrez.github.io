@@ -1,6 +1,6 @@
 ---
 title: "Location"
-date: 2024-11-01
+date: 2025-06-27
 hidemeta: true
 description: "Jaafar Mehrez`s  mailing and office addresses at the Shanghai Jiao Tong University."
 
@@ -20,7 +20,6 @@ Shanghai, China
 
 #### Office address
 
-Building 01, Room 411                                                     
 National Key Laboratory of Advanced Micro and Nano Manufacture Technology            
 Shanghai Jiao Tong University
 
