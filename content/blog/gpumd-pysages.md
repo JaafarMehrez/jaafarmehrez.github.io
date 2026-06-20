@@ -1,20 +1,10 @@
 ---
 title: "GPUMD-PySAGES: GPU-Native Enhanced Sampling on Machine-Learning Potentials"
-date: 2025-06-20
+date: 2026-06-20
 description: "A GPU-native interface between GPUMD and PySAGES enabling zero-copy enhanced-sampling molecular dynamics with JAX-accelerated collective variables and bias potentials."
 tags: ["MD", "GPU", "Python", "Enhanced Sampling", "NEP"]
 math: true
 ---
-
-## Motivation
-
-Molecular dynamics (MD) simulations with machine-learned interatomic potentials — particularly the neuroevolution potential (NEP) framework in [GPUMD](https://github.com/brucefan1983/GPUMD) — offer an excellent balance of accuracy and speed on GPUs. However, GPUMD has historically lacked native support for enhanced-sampling methods like metadynamics, umbrella sampling, or ABF.
-
-[PySAGES](https://github.com/SSAGESLabs/PySAGES), on the other hand, provides a JAX-based suite of enhanced-sampling methods with automatic differentiation and GPU-accelerated collective variable (CV) computations. But it requires a backend that can supply positions and forces from an MD engine at each timestep.
-
-**GPUMD-PySAGES** bridges this gap with a zero-copy, GPU-native interface. The full source is at [github.com/JaafarMehrez/GPUMD-PySAGES](https://github.com/JaafarMehrez/GPUMD-PySAGES).
-
-## Theoretical background
 
 ### The rare-event problem
 
