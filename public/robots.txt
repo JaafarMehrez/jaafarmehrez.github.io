@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://jaafarmehrez.github.io/jaafarmehrez.github.io/sitemap.xml

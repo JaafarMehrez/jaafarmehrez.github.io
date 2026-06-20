@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Courses on Jaafar Mehrez</title>
+    <link>https://jaafarmehrez.github.io/jaafarmehrez.github.io/courses/</link>
+    <description>Recent content in Courses on Jaafar Mehrez</description>
+    <generator>Hugo -- 0.136.5</generator>
+    <language>en</language>
+    <atom:link href="https://jaafarmehrez.github.io/jaafarmehrez.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
