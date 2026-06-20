@@ -23,7 +23,7 @@ menu:
           url: data/
           weight: 4 
         - name: Blog
-          url: https://medium.com/@jfrmhrzz         
+          url: blog/
           weight: 6
 
 params:
@@ -42,7 +42,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
+    MainSections: ["books","courses","papers","data","blog"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -71,7 +71,7 @@ params:
             - name: Archive
               url: archive/
             - name: Blog
-              url: https://medium.com/@jfrmhrzz
+              url: blog/
 
     socialIcons:
         - name: CV
