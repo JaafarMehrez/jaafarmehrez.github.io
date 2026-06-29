@@ -59,11 +59,14 @@ pre code {
     line-height: 1.8;
     border: none;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .logo {
-    display: inline-flex;
-    margin: 0 0.5em 0 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .logo a {
