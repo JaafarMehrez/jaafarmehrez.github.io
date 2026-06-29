@@ -109,7 +109,7 @@ params:
         hiddenInSingle: true
     label:
       text: "Jaafar Mehrez"
-      icon: favicon.ico
+      icon: JXC.jpg
       iconHeight: 18
 
 markup:
