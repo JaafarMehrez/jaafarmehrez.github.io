@@ -1,4 +1,4 @@
 ---
-title: "Courses"
+title: "Tutorials"
 description: ""
 ---

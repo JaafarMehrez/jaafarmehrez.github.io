@@ -56,56 +56,50 @@ pre code {
 .nav {
     background: transparent;
     justify-content: center;
-    line-height: 2;
+    line-height: 1.8;
     border: none;
+    flex-wrap: wrap;
 }
 
 .logo {
     display: inline-flex;
-    margin: 0;
+    margin: 0 0.5em 0 0;
 }
 
 .logo a {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 400;
     font-family: "CMU Serif", "Computer Modern", Georgia, serif;
 }
 
 #menu {
     list-style: none;
-    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
     padding: 0;
-    display: block;
-    margin: 0 auto;
     white-space: normal;
     overflow-x: visible;
+    gap: 0.5em;
 }
 
 #menu li {
     display: inline;
-    margin: 0.25em;
-}
-
-#menu li + li {
-    margin-inline-start: 0.5em;
 }
 
 #menu a {
     font-family: "CMU Serif", "Computer Modern", Georgia, serif;
-    font-size: 1em;
+    font-size: 0.95em;
 }
 
 #menu .active {
     border-bottom: 1px solid sandybrown;
 }
 
-button#theme-toggle {
-    display: none;
-}
-
+button#theme-toggle,
 .logo-switches {
-    display: inline-flex;
-    margin: 0 0.25em;
+    display: none;
 }
 
 /* Main content area */
