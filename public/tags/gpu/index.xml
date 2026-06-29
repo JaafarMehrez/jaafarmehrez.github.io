@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>GPU on Jaafar Mehrez</title>
-    <link>https://jaafarmehrez.github.io/jaafarmehrez.github.io/tags/gpu/</link>
+    <link>https://jaafarmehrez.github.io/tags/gpu/</link>
     <description>Recent content in GPU on Jaafar Mehrez</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>en</language>
     <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jaafarmehrez.github.io/jaafarmehrez.github.io/tags/gpu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jaafarmehrez.github.io/tags/gpu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GPUMD-PySAGES: GPU-Native Enhanced Sampling on Machine-Learning Potentials</title>
-      <link>https://jaafarmehrez.github.io/jaafarmehrez.github.io/blog/gpumd-pysages/</link>
+      <link>https://jaafarmehrez.github.io/blog/gpumd-pysages/</link>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://jaafarmehrez.github.io/jaafarmehrez.github.io/blog/gpumd-pysages/</guid>
+      <guid>https://jaafarmehrez.github.io/blog/gpumd-pysages/</guid>
       <description>A GPU-native interface between GPUMD and PySAGES enabling zero-copy enhanced-sampling molecular dynamics with JAX-accelerated collective variables and bias potentials.</description>
     </item>
   </channel>

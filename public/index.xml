@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jaafar Mehrez</title>
-    <link>https://jaafarmehrez.github.io/jaafarmehrez.github.io/</link>
+    <link>https://jaafarmehrez.github.io/</link>
     <description>Recent content on Jaafar Mehrez</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>en</language>
     <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jaafarmehrez.github.io/jaafarmehrez.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jaafarmehrez.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GPUMD-PySAGES: GPU-Native Enhanced Sampling on Machine-Learning Potentials</title>
-      <link>https://jaafarmehrez.github.io/jaafarmehrez.github.io/blog/gpumd-pysages/</link>
+      <link>https://jaafarmehrez.github.io/blog/gpumd-pysages/</link>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://jaafarmehrez.github.io/jaafarmehrez.github.io/blog/gpumd-pysages/</guid>
+      <guid>https://jaafarmehrez.github.io/blog/gpumd-pysages/</guid>
       <description>A GPU-native interface between GPUMD and PySAGES enabling zero-copy enhanced-sampling molecular dynamics with JAX-accelerated collective variables and bias potentials.</description>
     </item>
     <item>
       <title>Location</title>
-      <link>https://jaafarmehrez.github.io/jaafarmehrez.github.io/location/</link>
+      <link>https://jaafarmehrez.github.io/location/</link>
       <pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://jaafarmehrez.github.io/jaafarmehrez.github.io/location/</guid>
+      <guid>https://jaafarmehrez.github.io/location/</guid>
       <description>Jaafar Mehrez`s  mailing and office addresses at the Shanghai Jiao Tong University.</description>
     </item>
     <item>
       <title>Office Hours</title>
-      <link>https://jaafarmehrez.github.io/jaafarmehrez.github.io/officehours/</link>
+      <link>https://jaafarmehrez.github.io/officehours/</link>
       <pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://jaafarmehrez.github.io/jaafarmehrez.github.io/officehours/</guid>
+      <guid>https://jaafarmehrez.github.io/officehours/</guid>
       <description>Schedule and location for Jaafar Mehrez&amp;#39;s office hours.</description>
     </item>
     <item>
       <title></title>
-      <link>https://jaafarmehrez.github.io/jaafarmehrez.github.io/archive/</link>
+      <link>https://jaafarmehrez.github.io/archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jaafarmehrez.github.io/jaafarmehrez.github.io/archive/</guid>
+      <guid>https://jaafarmehrez.github.io/archive/</guid>
       <description></description>
     </item>
   </channel>
