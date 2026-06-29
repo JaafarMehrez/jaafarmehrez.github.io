@@ -24,6 +24,9 @@
 <meta name="author" content="{{ (partial "author.html" . ) }}">
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
 
+{{- /* LaTeX / Computer Modern fonts */}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@master/fonts.css">
+
 {{- /* Styles */}}
 
 {{- /* includes */}}

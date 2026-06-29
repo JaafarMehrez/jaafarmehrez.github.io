@@ -1,0 +1,451 @@
+/* LaTeX-inspired academic theme */
+
+body {
+    background: #1b1b1b;
+    color: #ddd;
+    font-family: "CMU Serif", "Computer Modern", "Latin Modern Roman", Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "CMU Serif", "Computer Modern", "Latin Modern Roman", Georgia, serif;
+    color: sandybrown;
+    text-align: center;
+}
+
+h1 { color: chocolate; }
+h2 { color: sandybrown; }
+h3 { color: tan; }
+h4 { color: wheat; }
+
+strong { color: wheat; }
+
+a {
+    color: #66ccff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+code {
+    font-family: "CMU Typewriter Text", "Courier New", monospace;
+    color: lime;
+    background: transparent;
+    padding: 0;
+}
+
+pre {
+    background: #222;
+    border: none;
+    border-radius: 0;
+}
+
+pre code {
+    background: transparent;
+    color: lime;
+}
+
+/* Header / Nav */
+
+.header {
+    border-bottom: 1px dotted #555;
+    margin-bottom: 1em;
+}
+
+.nav {
+    background: transparent;
+    justify-content: center;
+    line-height: 2;
+    border: none;
+}
+
+.logo {
+    display: inline-flex;
+    margin: 0;
+}
+
+.logo a {
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: "CMU Serif", "Computer Modern", Georgia, serif;
+}
+
+#menu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    white-space: normal;
+    overflow-x: visible;
+}
+
+#menu li {
+    display: inline;
+    margin: 0.25em;
+}
+
+#menu li + li {
+    margin-inline-start: 0.5em;
+}
+
+#menu a {
+    font-family: "CMU Serif", "Computer Modern", Georgia, serif;
+    font-size: 1em;
+}
+
+#menu .active {
+    border-bottom: 1px solid sandybrown;
+}
+
+button#theme-toggle {
+    display: none;
+}
+
+.logo-switches {
+    display: inline-flex;
+    margin: 0 0.25em;
+}
+
+/* Main content area */
+
+.main {
+    max-width: 800px;
+    margin: auto;
+    padding: 1em;
+    min-height: auto;
+}
+
+/* Profile mode (homepage) */
+
+.main .profile {
+    justify-content: center;
+    min-height: auto;
+    font-size: 1em;
+}
+
+.profile .profile_inner {
+    align-items: center;
+    text-align: center;
+    gap: 0.5em;
+}
+
+.profile .profile_inner h1 {
+    font-size: 2em;
+    color: chocolate;
+}
+
+.profile img {
+    border-radius: 50%;
+    max-width: 160px;
+}
+
+.profile .profile_inner .subtitle {
+    font-style: italic;
+    color: tan;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+}
+
+.button {
+    background: transparent;
+    border: 1px solid #555;
+    border-radius: 0;
+    margin: 0.25em;
+    padding: 0.25em 0.75em;
+    transition: none;
+    font-family: "CMU Serif", "Computer Modern", Georgia, serif;
+}
+
+.button:hover {
+    background: transparent;
+    border-color: goldenrod;
+}
+
+.button-inner {
+    padding: 0;
+}
+
+/* Post entries (blog list) */
+
+.post-entry {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 1.5em;
+    padding: 0.5em 0;
+    border-bottom: 1px dotted #444;
+    transition: none;
+}
+
+.post-entry:hover {
+    border-color: sandybrown;
+    border-bottom: 1px dotted sandybrown;
+}
+
+.entry-header h2 {
+    text-align: left;
+    font-size: 1.3em;
+    color: #66ccff;
+}
+
+.entry-content {
+    color: #aaa;
+    font-size: 0.95em;
+    margin: 0.5em 0;
+}
+
+.entry-footer {
+    color: #666;
+    font-size: 0.85em;
+}
+
+/* Post content (individual pages) */
+
+.post-header {
+    text-align: center;
+    margin: 2em auto;
+}
+
+.post-title {
+    font-size: 1.8em;
+    color: chocolate;
+    margin-bottom: 0.5em;
+}
+
+.post-meta {
+    color: #888;
+    font-size: 0.85em;
+}
+
+.post-content {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    color: sandybrown;
+    text-align: center;
+}
+
+.post-content h1 { font-size: 1.6em; }
+.post-content h2 { font-size: 1.3em; }
+.post-content h3 { font-size: 1.15em; }
+
+.post-content a {
+    box-shadow: none;
+    color: #66ccff;
+}
+
+.post-content a:hover {
+    color: goldenrod;
+}
+
+.post-content p {
+    margin-bottom: 1em;
+}
+
+.post-content img {
+    border-radius: 0;
+    display: block;
+    margin: 1em auto;
+}
+
+.post-content blockquote {
+    border-inline-start: 3px solid sandybrown;
+    color: #999;
+    margin: 1em 0;
+    padding: 0 1em;
+}
+
+.post-content hr {
+    background: #555;
+    height: 1px;
+    margin: 2em 0;
+}
+
+.post-content code {
+    margin: 0;
+    padding: 0.15em 0.3em;
+    background: #2a2a2a;
+    border-radius: 0;
+}
+
+.post-content pre code {
+    padding: 0.5em;
+    background: #222;
+}
+
+.post-content .highlight {
+    border-radius: 0;
+}
+
+.post-content table {
+    color: #ccc;
+}
+
+.post-content table th {
+    text-transform: none;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+/* Tags */
+
+.post-tags {
+    justify-content: center;
+}
+
+.post-tags a {
+    background: transparent;
+    border: 1px solid #555;
+    border-radius: 0;
+    color: #888;
+    font-size: 0.85em;
+    line-height: 1.5;
+    padding: 0 0.5em;
+}
+
+.post-tags a:hover {
+    background: transparent;
+    border-color: goldenrod;
+    color: goldenrod;
+}
+
+/* Social icons */
+
+.social-icons a {
+    padding: 0.5em;
+    color: #888;
+}
+
+.social-icons a:hover {
+    color: goldenrod;
+}
+
+.social-icons a svg {
+    height: 1.2em;
+    width: 1.2em;
+}
+
+/* Footer */
+
+.footer {
+    background: transparent;
+    font-size: 0.8em;
+    color: #666;
+    padding: 1em;
+}
+
+.footer a {
+    color: #888;
+}
+
+.footer a:hover {
+    border-bottom: 1px solid goldenrod;
+}
+
+/* Archive / Terms */
+
+.page-header h1 {
+    text-align: center;
+}
+
+/* TOC */
+
+.toc {
+    background: transparent;
+    border: 1px solid #444;
+    border-radius: 0;
+}
+
+.toc details summary {
+    text-align: center;
+}
+
+/* Search */
+
+.search {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Pagination */
+
+.pagination a {
+    background: transparent;
+    border: 1px solid #555;
+    border-radius: 0;
+    color: #888;
+}
+
+.pagination a:hover {
+    border-color: goldenrod;
+    color: goldenrod;
+}
+
+/* Miscellaneous */
+
+.top-link {
+    display: none;
+}
+
+#theme-toggle {
+    display: none;
+}
+
+/* Remove extraneous PaperMod visual elements */
+
+:root {
+    --radius: 0px;
+    --gap: 24px;
+    --content-gap: 16px;
+    --main-width: 800px;
+    --header-height: auto;
+    --footer-height: auto;
+}
+
+/* Table of Contents link removal on hover */
+
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+    display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    .main {
+        padding: 1em 0.75em;
+    }
+
+    #menu li {
+        display: inline-block;
+        margin: 0.15em;
+    }
+
+    .profile .profile_inner h1 {
+        font-size: 1.5em;
+    }
+
+    .post-title {
+        font-size: 1.4em;
+    }
+}

@@ -6,12 +6,12 @@
     <description>Recent content in Blog on Jaafar Mehrez</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jaafarmehrez.github.io/jaafarmehrez.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GPUMD-PySAGES: GPU-Native Enhanced Sampling on Machine-Learning Potentials</title>
       <link>https://jaafarmehrez.github.io/jaafarmehrez.github.io/blog/gpumd-pysages/</link>
-      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://jaafarmehrez.github.io/jaafarmehrez.github.io/blog/gpumd-pysages/</guid>
       <description>A GPU-native interface between GPUMD and PySAGES enabling zero-copy enhanced-sampling molecular dynamics with JAX-accelerated collective variables and bias potentials.</description>
     </item>
