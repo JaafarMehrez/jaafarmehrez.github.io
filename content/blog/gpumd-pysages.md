@@ -78,27 +78,12 @@ The parameter $\Delta T$ controls the extent of exploration: $\Delta T = 0$ reco
 
 The interface has four layers:
 
-```
-PySAGES (JAX)
-├─ Collective Variables (Python / JAX)
-├─ Bias computation (GPU, float64)
-└─ run() orchestration
+- **PySAGES (JAX):** Collective variables (Python/JAX), GPU-based bias computation (float64), and run orchestration.
+- **GPUMD-PySAGES Backend (pysages_backend/gpumd.py):** Constructs snapshots from DLPack (zero-copy), caches constant data (atom IDs, masses, box for NVT), and registers `_update()` as the GPUMD step callback.
+- **pybind11 Wrapper (wrapper/gpumd_python.cpp):** Exposes GPUMD’s GPU arrays as DLPack capsules, provides `set_step_callback()`/`run()`/synchronization, and adds a custom CUDA kernel (`add_aos_bias_to_forces()`) to apply bias forces directly to GPUMD’s SOA `force_per_atom`.
+- **GPUMD Engine (C++ / CUDA):** Performs force computation (`force.compute()`), invokes the Python `step_callback()` (PySAGES hook) after post-force, applies any external bias, then calls `integrate.compute2()`.
 
-GPUMD-PySAGES Backend (pysages_backend/gpumd.py)
-├─ Snapshot from DLPack (zero-copy)
-├─ Cached constants (ids, masses, box for NVT)
-└─ _update() registered as GPUMD step callback
 
-pybind11 Wrapper (wrapper/gpumd_python.cpp)
-├─ DLPack capsules for positions/forces/velocities
-├─ set_step_callback() / run()
-└─ add_aos_bias_to_forces() (custom CUDA kernel)
-
-GPUMD Engine (C++ / CUDA)
-├─ force.compute()
-├─ step_callback() ← PySAGES hook
-└─ integrate.compute2()
-```
 
 ### How it works
 
@@ -163,7 +148,9 @@ The reconstructed FES shows two minima at $\phi = \pm 60^\circ$ (staggered confo
 
 ![Ethane dihedral free energy surface](fes_ethane_wt.png)
 
-*Figure 1: Free energy surface of ethane along the H-C-C-H dihedral angle from well-tempered metadynamics. The staggered conformations at $\pm 60^\circ$ are the global minima; the eclipsed barriers at $0^\circ$ and $\pm 120^\circ$ are approximately 0.12 eV higher.*
+*![Free energy surface of ethane along the H-C-C-H dihedral angle from well-tempered metadynamics. The staggered conformations at $\pm 60^\circ$ are the global minima; the eclipsed barriers at $0^\circ$ and $\pm 120^\circ$ are approximately 0.12 eV higher.](/blog/assets/fes_ethane_wt.png)
+
+**Figure 1:** Free energy surface of ethane along the H-C-C-H dihedral angle from well-tempered metadynamics. The staggered conformations at $\pm 60^\circ$ are the global minima; the eclipsed barriers at $0^\circ$ and $\pm 120^\circ$ are approximately 0.12 eV higher.*
 
 The hills file and FES data are written to `hills_ethane_wt.dat` and `fes_ethane_wt.dat` respectively during the run.
 
