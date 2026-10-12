@@ -148,7 +148,9 @@ The reconstructed FES shows two minima at $\phi = \pm 60^\circ$ (staggered confo
 
 
 
-**Figure 1:** Free energy surface of ethane along the H-C-C-H dihedral angle from well-tempered metadynamics. The staggered conformations at $\pm 60^\circ$ are the global minima; the eclipsed barriers at $0^\circ$ and $\pm 120^\circ$ are approximately 0.12 eV higher.*
+![Free energy surface of ethane along the H-C-C-H dihedral angle from well-tempered metadynamics. The staggered conformations at $\pm 60^\circ$ are the global minima; the eclipsed barriers at $0^\circ$ and $\pm 120^\circ$ are approximately 0.12 eV higher.](/blog/assets/fes_ethane_wt.png)
+
+**Figure 1:** Free energy surface of ethane along the H-C-C-H dihedral angle from well-tempered metadynamics. The staggered conformations at $\pm 60^\circ$ are the global minima; the eclipsed barriers at $0^\circ$ and $\pm 120^\circ$ are approximately 0.12 eV higher.
 
 The hills file and FES data are written to `hills_ethane_wt.dat` and `fes_ethane_wt.dat` respectively during the run.
 
