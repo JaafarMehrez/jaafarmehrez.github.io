@@ -146,9 +146,7 @@ A = -alpha * metapotential(xi)
 
 The reconstructed FES shows two minima at $\phi = \pm 60^\circ$ (staggered conformations) separated by barriers at $\phi = 0^\circ, \pm 120^\circ$ (eclipsed conformations). The barrier height is approximately 0.12 eV (~12 kJ/mol), in excellent agreement with the experimental value for ethane.
 
-![Ethane dihedral free energy surface](fes_ethane_wt.png)
 
-*![Free energy surface of ethane along the H-C-C-H dihedral angle from well-tempered metadynamics. The staggered conformations at $\pm 60^\circ$ are the global minima; the eclipsed barriers at $0^\circ$ and $\pm 120^\circ$ are approximately 0.12 eV higher.](/blog/assets/fes_ethane_wt.png)
 
 **Figure 1:** Free energy surface of ethane along the H-C-C-H dihedral angle from well-tempered metadynamics. The staggered conformations at $\pm 60^\circ$ are the global minima; the eclipsed barriers at $0^\circ$ and $\pm 120^\circ$ are approximately 0.12 eV higher.*
 
