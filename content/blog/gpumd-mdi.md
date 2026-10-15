@@ -30,11 +30,7 @@ In this article the ENGINE is **GPUMD**: a GPU-native MD code written in CUDA wi
 
 ## Architecture
 
-The repository keeps the interface *outside* the GPUMD tree. The build copies a handful of files into a GPUMD checkout and links a separate executable, `gpumd-mdi`. The DRIVER and the ENGINE never touch each other's memory directly — every exchange travels through the MDI library, which can carry the conversation over TCP, Unix named pipes, MPI, or shared memory:
-
-![GPUMD-MDI coupling overview: a VASP DRIVER on the left and a GPUMD ENGINE on the right exchange commands and data through the MDI library over TCP.](/blog/assets/gpumd_mdi_overview.svg)
-
-The ENGINE side is built from four files that are copied into `GPUMD/src/`:
+The repository keeps the interface *outside* the GPUMD tree. The build copies a handful of files into a GPUMD checkout and links a separate executable, `gpumd-mdi`. The DRIVER and the ENGINE never touch each other's memory directly — every exchange travels through the MDI library, which can carry the conversation over TCP, Unix named pipes, MPI, or shared memory. The ENGINE side is built from four files that are copied into `GPUMD/src/`:
 
 ```text
 src/main_mdi/
@@ -142,17 +138,17 @@ The bundled example couples GPUMD to **VASP** for a small Cu system. VASP plays 
 
 ```text
 DRIVER (VASP)                              ENGINE (GPUMD)
-   │  <NATOMS ────────────────────────────▶ │  return natoms
-   │                                          │
-   │  <COORDS ────────────────────────────▶ │  send positions
+   │  <NATOMS ────────────────────────────▶  │  return natoms
+   │                                         │
+   │  <COORDS ────────────────────────────▶  │  send positions
    │  ◀──────────────────────── r[3N]        │
-   │                                          │
-   │  [write POSCAR → run VASP → parse XML]   │
-   │                                          │
+   │                                         │
+   │  [write POSCAR → run VASP → parse XML]  │
+   │                                         │
    │  >ENERGY ──── E_total ────────────────▶ │  store external energy
    │  >STRESS ──── σ(3×3) ─────────────────▶ │  store external stress
    │  >FORCES ──── F[3N] ──────────────────▶ │  store forces → integrate one step
-   │                                          │
+   │                                         │
    │  EXIT ────────────────────────────────▶ │  finalize and stop
 ```
 
