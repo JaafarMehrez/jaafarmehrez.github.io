@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 370" width="960" height="370" role="img" aria-labelledby="gpumdMdiTitle gpumdMdiDesc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+  <title id="gpumdMdiTitle">GPUMD-MDI coupling overview</title>
+  <desc id="gpumdMdiDesc">A DRIVER (VASP) and an ENGINE (GPUMD) exchange commands and data through the MDI library over TCP.</desc>
+
+  <defs>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7aa2f7"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9ece6a"/>
+    </marker>
+  </defs>
+
+  <!-- self-contained panel so the figure reads on both light and dark themes -->
+  <rect x="1" y="1" width="958" height="368" rx="20" fill="#1b1e24" stroke="#2f343b" stroke-width="1.5"/>
+
+  <!-- DRIVER -->
+  <rect x="40" y="90" width="290" height="190" rx="16" fill="#7aa2f7" fill-opacity="0.08" stroke="#7aa2f7" stroke-width="1.5"/>
+  <text x="185" y="128" text-anchor="middle" font-size="22" font-weight="700" fill="#e6e6e6">VASP</text>
+  <text x="185" y="152" text-anchor="middle" font-size="13" fill="#7aa2f7">DRIVER — quantum chemistry</text>
+  <line x1="64" y1="170" x2="316" y2="170" stroke="#3a3f45" stroke-width="1"/>
+  <text x="64" y="196" font-size="13" fill="#c9ccd1">• computes energy, forces, stress</text>
+  <text x="64" y="220" font-size="13" fill="#c9ccd1">• writes POSCAR, runs the SCF</text>
+  <text x="64" y="244" font-size="13" fill="#c9ccd1">• parses vasprun.xml</text>
+  <text x="64" y="268" font-size="13" fill="#c9ccd1">• vasp_mdi_driver.py</text>
+
+  <!-- ENGINE -->
+  <rect x="630" y="90" width="290" height="190" rx="16" fill="#9ece6a" fill-opacity="0.08" stroke="#9ece6a" stroke-width="1.5"/>
+  <text x="775" y="128" text-anchor="middle" font-size="22" font-weight="700" fill="#e6e6e6">GPUMD</text>
+  <text x="775" y="152" text-anchor="middle" font-size="13" fill="#9ece6a">ENGINE — GPU molecular dynamics</text>
+  <line x1="654" y1="170" x2="906" y2="170" stroke="#3a3f45" stroke-width="1"/>
+  <text x="654" y="196" font-size="13" fill="#c9ccd1">• integrates with external forces</text>
+  <text x="654" y="220" font-size="13" fill="#c9ccd1">• NEP · dumps · thermostats</text>
+  <text x="654" y="244" font-size="13" fill="#c9ccd1">• one step per &gt;FORCES</text>
+  <text x="654" y="268" font-size="13" fill="#c9ccd1">• gpumd-mdi</text>
+
+  <!-- MDI -->
+  <rect x="420" y="150" width="120" height="100" rx="14" fill="#e0af68" fill-opacity="0.12" stroke="#e0af68" stroke-width="1.5"/>
+  <text x="480" y="186" text-anchor="middle" font-size="18" font-weight="700" fill="#e6e6e6">MDI</text>
+  <text x="480" y="208" text-anchor="middle" font-size="12" fill="#e0af68">library</text>
+  <text x="480" y="228" text-anchor="middle" font-size="11" fill="#9aa0a6">TCP :8021</text>
+
+  <!-- commands channel: DRIVER -> ENGINE -->
+  <text x="480" y="134" text-anchor="middle" font-size="13" font-weight="700" fill="#7aa2f7">commands + input data</text>
+  <line x1="330" y1="165" x2="414" y2="165" stroke="#7aa2f7" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <line x1="546" y1="165" x2="626" y2="165" stroke="#7aa2f7" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- data channel: ENGINE -> DRIVER -->
+  <line x1="626" y1="238" x2="548" y2="238" stroke="#9ece6a" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <line x1="412" y1="238" x2="330" y2="238" stroke="#9ece6a" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="480" y="272" text-anchor="middle" font-size="13" font-weight="700" fill="#9ece6a">natoms · coords · energy · forces</text>
+</svg>
